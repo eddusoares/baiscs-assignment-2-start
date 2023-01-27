@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-username',
@@ -7,9 +6,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./username.component.css'],
 })
 export class UsernameComponent implements OnInit {
-  userName = '';
-
-  usernameIsEmpty: boolean = true;
+  userName: string = '';
 
   clearUsername(event: any) {
     this.userName = (<HTMLInputElement>event.target).value;
